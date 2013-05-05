@@ -5,7 +5,7 @@ module Euler
     end
 
     def self.sum_multiples(ary, range)
-      range.inject(0) do |sum, n|
+      range.reduce(0) do |sum, n|
         ary.any? { |i| n % i == 0 } ? sum + n : sum
       end
     end

@@ -9,6 +9,7 @@ object Problem1 {
         total
     }
   }
+
+  def main(args:Array[String]) = println(sum_multiples(List(3,5), 1 to 999))
 }
 
-println(Problem1.sum_multiples(List(3,5), 1 to 999))

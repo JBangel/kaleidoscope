@@ -1,5 +1,14 @@
 #!/usr/bin/env scala
 
+/** Sieve of Eratosthenes
+  *
+  * Very naive sieve class
+  * Most would consider it broken since it
+  * checks the factors against each eelement
+  * remaining in the list instead of stepping
+  * by the current factor
+  */
+
 object Eratosthenes {
   def main(args: Array[String]) = {
     var results = sieve(10000)

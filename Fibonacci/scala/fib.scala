@@ -16,7 +16,7 @@ object Fibonacci {
     var results = Array(1, 1)
 
     while( results.length < count ) {
-      results = results :+ results.takeRight(2).fold(0)((total, n) => total + n)
+      results :+= results.takeRight(2).fold(0)((total, n) => total + n)
     }
 
     results.take(count)
